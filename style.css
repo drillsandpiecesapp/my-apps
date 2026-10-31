@@ -1,0 +1,35 @@
+:root{--bg:#f6f2fd;--surface:#fff;--ink:#24163a;--muted:#5d4f78;--brand:#7a2bd6;--on:#fff;--soft:#e6d9f8;--line:#d9c9f1;--focus:#3b0f7a}
+@media(prefers-color-scheme:dark){:root{--bg:#170d26;--surface:#241538;--ink:#f1e9fc;--muted:#bcaad8;--brand:#b784f0;--on:#1c0d31;--soft:#33204d;--line:#443061;--focus:#e6d5ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Segoe UI Variable Text","Segoe UI","Helvetica Neue",Roboto,system-ui,sans-serif}
+a{color:var(--brand)}
+a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.wrap{max-width:680px;margin:0 auto;padding:0 22px}
+header{padding:44px 0 30px}
+.back{display:inline-block;margin-bottom:22px;font-size:.95rem}
+.brand{display:flex;align-items:center;gap:18px}
+.brand img,.app img{width:84px;height:84px;border-radius:50%;flex:none;background:var(--soft)}
+h1{margin:0;font-size:clamp(2rem,6vw,2.8rem);line-height:1.1;letter-spacing:-.02em}
+h2{margin:0 0 12px;font-size:1.45rem;letter-spacing:-.01em}
+p{margin:0 0 14px}
+.tag{margin:20px 0 0;font-size:1.2rem}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin-top:22px}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:var(--brand);color:var(--on)}
+.btn:hover{filter:brightness(1.08)}
+.btn.alt{background:transparent;color:var(--brand);border:2px solid var(--brand);padding:11px 22px}
+.fine{color:var(--muted);font-size:.92rem;margin:12px 0 0}
+section{padding:32px 0;border-top:1px solid var(--line)}
+.app{display:flex;gap:20px;align-items:flex-start;padding:30px 0;border-top:1px solid var(--line)}
+.app h2{margin-bottom:6px}
+ul.feat{margin:0;padding-left:1.2em}
+ul.feat li{margin:6px 0}
+.shots{display:flex;gap:14px;overflow-x:auto;padding-bottom:10px}
+.shots figure{margin:0;flex:none;width:210px}
+.shots img{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);display:block}
+.shots figcaption{font-size:.88rem;color:var(--muted);margin-top:6px}
+ol.steps{margin:0;padding:0;list-style:none;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding:0 0 16px 48px}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-weight:700;font-size:.95rem}
+.note{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+footer{padding:30px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+@media(max-width:480px){.app{flex-direction:column}}
