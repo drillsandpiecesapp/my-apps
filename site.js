@@ -2,7 +2,7 @@
 const GH = "drillsandpiecesapp/my-apps"; // your GitHub username/repository
 const DONATE = "https://www.venmo.com/u/HokuKai330";                      // your donation link; leave empty to hide donation buttons
 document.querySelectorAll("[data-apk]").forEach(a => {
-  a.href = "https://github.com/" + GH + "" + a.dataset.apk + "/releases/download/" + a.dataset.apk + ".apk";
+  a.href = "https://github.com/" + GH + "/releases/download/" + a.dataset.apk + "/" + a.dataset.apk + ".apk";;
 });
 document.querySelectorAll("[data-donate]").forEach(e => {
   if (DONATE) e.href = DONATE; else e.style.display = "none";
