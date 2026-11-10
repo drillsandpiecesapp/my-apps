@@ -71,3 +71,4 @@ This document provides a comprehensive list of all features implemented in the a
 ## 9. Support & Privacy
 - **Support & Donations**: Optional support link via Venmo (`https://www.venmo.com/u/HokuKai330`) and Discord community integration.
 - **Privacy Assurance**: Clear privacy disclosures confirming that the app does not require a login, features zero tracking/analytics, and never collects or stores personal data.
+- **Privacy Policy**: Full policy at `privacy.html` on this site and at https://sites.google.com/view/drillspiecesapp/home (linked in Google Play and from Settings > About in the app).
