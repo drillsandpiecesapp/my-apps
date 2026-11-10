@@ -23,9 +23,9 @@ This document provides a comprehensive list of all features implemented in the a
 - **Cost / Price Tracking**: Optional nullable decimal cost field stored securely and formatted as currency using the device's locale (e.g., `$24.99`).
 - **Purchase Link**: Store and open web purchase URLs (`Where I bought it`), with quick copy-to-clipboard functionality and URL auto-formatting.
 
-## 3. Barcode Scanning & Auto-Fill
-- **Barcode Scanner**: Integrated CameraX and ML Kit barcode scanner for scanning craft kit barcodes.
-- **Product Auto-Fill Service**: Lookup barcodes via UPCIndex / UPCItemDB to automatically fetch and fill product titles, brand/artist, dimensions, drill counts, shapes, and cover images.
+## 3. Project Drill Colors
+- **Drill Colors per Project**: List the DMC colors a diamond art project uses, each with a color swatch (colors only, no counts).
+- **In-Stock Reference**: Shows whether each color is in Drill Stock. It only reads stock and never changes it.
 
 ## 4. Time Tracking & Work Sessions
 - **Live Work Timers**: Start, pause, and run active work timers for projects with real-time UI second tickers.
@@ -36,7 +36,7 @@ This document provides a comprehensive list of all features implemented in the a
 ## 5. Drill Stock Inventory Management
 - **Inventory Tracking**: Manage drill and bead stock by color code (e.g., DMC 310, B5200, custom codes), color names, and shapes.
 - **Special Drill Finishes**: Support for Standard, AB (Aurora Borealis), Fairy Dust, Translucent, Rhinestone, Glitter, Metallic, Glow in the Dark, Crystal AB, Sparkle, Neon, Pearl, and Custom finishes.
-- **Quantity & Barcode Linking**: Track bags/quantities and associate barcodes with inventory items.
+- **Quantity Tracking**: Track bags/quantities for each color.
 
 ## 6. Enhanced Sharing & Exporting Features
 - **Comprehensive Project Text**: Generates rich share text including title, type, status, dimensions, shapes, drill/piece counts, time spent, brand/artist, purchase link, locale-formatted cost, and notes.
